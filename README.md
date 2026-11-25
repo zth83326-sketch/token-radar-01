@@ -8,8 +8,10 @@ Token Launch Radar — ranks pre-token DeFi protocols by an implied valuation ca
 
 ## Run it
 
+Take the snapshot from the competition kit (`input/snapshot.json`) and run:
+
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input input/snapshot.json
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input path/to/snapshot.json
 ```
 
 The run writes `out/board.json`, `out/dossier.json`, `out/dossier.txt` and the screenshots. Open `dashboard/index.html` (served from the repo root) to explore the board, filter by chain, and inspect any row's full multiplier breakdown and farm plan.
